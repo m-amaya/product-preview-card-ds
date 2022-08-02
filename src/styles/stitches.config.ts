@@ -8,7 +8,6 @@ import {
   palette,
   zIndex,
 } from "~/tokens/tokens.json";
-import type { FontStyleType } from "~/types";
 import rgba from "~/utils/rgba";
 
 function replace<T>(vars: T, template: string) {
@@ -42,14 +41,6 @@ export const {
   },
   media: replace(breakpoints, "(min-width: %px)"),
   utils: {
-    // typography
-    textStyle: (type: FontStyleType) => ({
-      color: type.search(/h/i) > -1 ? "$black" : "$mediumBrown",
-      fontFamily: "$jakarta",
-      fontSize: `$${type}`,
-      fontWeight: type.search(/h/i) > -1 ? "$bold" : "$medium",
-      lineHeight: `$${type}`,
-    }),
     // states
     focusRing: (color: keyof typeof palette) => ({
       outlineColor: rgba(palette[color], 0.35),

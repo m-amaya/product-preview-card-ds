@@ -1,34 +1,25 @@
 {
   "palette": {
-    "galacticBlue": {
-      "value": "#755CDE"
+    "cream": {
+      "value": "#F2EAE2"
     },
-    "summerYellow": {
-      "value": "#F6A560"
+    "aurometalSaurus": {
+      "value": "#6C7289"
     },
-    "pink": {
-      "value": "#F39E9E"
+    "deepAquamarine": {
+      "value": "#3D8168"
     },
-    "lightRed": {
-      "value": "#EB7565"
+    "deepAquamarineHover": {
+      "value": "#1A4032"
     },
-    "cyan": {
-      "value": "#61C4B7"
+    "gunmetal": {
+      "value": "#1C232B"
     },
-    "darkPurple": {
-      "value": "#552049"
-    },
-    "mediumBrown": {
-      "value": "#7A746E"
-    },
-    "lightCream": {
-      "value": "#FFF7F0"
-    },
-    "white": {
+    "pureWhite": {
       "value": "#fff"
     },
     "black": {
-      "value": "#030303"
+      "value": "#000"
     }
   }
 }

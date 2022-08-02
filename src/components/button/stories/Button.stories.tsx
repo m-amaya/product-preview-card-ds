@@ -18,26 +18,4 @@ const Template: Story<ButtonProps> = (args) => (
   <LibraryButton {...args}>Free Consultation</LibraryButton>
 );
 
-export const PrimaryButton = Template.bind({});
-
-PrimaryButton.args = {
-  kind: "primary",
-};
-
-export const SecondaryButton = Template.bind({});
-
-SecondaryButton.args = {
-  kind: "secondary",
-};
-
-const IconTemplate: Story<ButtonProps> = (args) => (
-  <LibraryButton {...args}>
-    <Icon name='arrow-left' color='$white' />
-  </LibraryButton>
-);
-
-export const IconButton = IconTemplate.bind({});
-
-IconButton.args = {
-  kind: "icon",
-};
+export const Button = Template.bind({});

@@ -1,8 +1,8 @@
 import type { HTMLAttributes } from "react";
-import type { CommonProps } from "~/types";
+import type { CommonProps, IconNames } from "~/types";
 
 export interface ButtonProps
   extends CommonProps,
     HTMLAttributes<HTMLButtonElement> {
-  kind?: "primary" | "secondary" | "icon";
+  iconName?: IconNames;
 }

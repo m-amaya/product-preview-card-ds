@@ -3,9 +3,6 @@
     "mobile": {
       "value": 375
     },
-    "tablet": {
-      "value": 768
-    },
     "desktop": {
       "value": 1440
     }

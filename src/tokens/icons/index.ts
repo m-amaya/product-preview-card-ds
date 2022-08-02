@@ -1,9 +1,7 @@
-import { ReactComponent as ArrowLeftSvg } from "./svg/arrow-left.svg";
-import { ReactComponent as ArrowRightSvg } from "./svg/arrow-right.svg";
+import { ReactComponent as IronCartSvg } from "./svg/iron-cart.svg";
 
 const ICONS = {
-  "arrow-left": ArrowLeftSvg,
-  "arrow-right": ArrowRightSvg,
+  "iron-cart": IronCartSvg,
 };
 
 export default ICONS;

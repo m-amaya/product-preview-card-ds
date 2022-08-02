@@ -15,7 +15,11 @@ export default {
 } as Meta<typeof LibraryButton>;
 
 const Template: Story<ButtonProps> = (args) => (
-  <LibraryButton {...args}>Free Consultation</LibraryButton>
+  <LibraryButton {...args}>Add to Cart</LibraryButton>
 );
 
 export const Button = Template.bind({});
+
+Button.args = {
+  iconName: "cart",
+};

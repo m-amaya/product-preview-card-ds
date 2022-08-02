@@ -1,7 +1,7 @@
-import { ReactComponent as IronCartSvg } from "./svg/iron-cart.svg";
+import { ReactComponent as CartSvg } from "./svg/icon-cart.svg";
 
 const ICONS = {
-  "iron-cart": IronCartSvg,
+  cart: CartSvg,
 };
 
 export default ICONS;

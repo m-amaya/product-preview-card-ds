@@ -30,10 +30,10 @@
     }
   },
   "fontWeights": {
-    "montserratMedium": {
+    "medium": {
       "value": 500
     },
-    "frauncesBold": {
+    "bold": {
       "value": 700
     }
   }

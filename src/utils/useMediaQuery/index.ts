@@ -4,13 +4,11 @@ import useWindowSize from "~/utils/useWindowSize";
 function useMediaQuery() {
   const { windowWidth } = useWindowSize();
 
-  const isGteTablet = windowWidth && windowWidth >= breakpoints.tablet;
   const isGteDesktop = windowWidth && windowWidth >= breakpoints.desktop;
-  const isMobile = !isGteTablet && !isGteDesktop;
+  const isMobile = !isGteDesktop;
 
   return {
     isMobile,
-    isGteTablet,
     isGteDesktop,
   };
 }

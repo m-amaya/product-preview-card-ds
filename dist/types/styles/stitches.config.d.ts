@@ -1,43 +1,37 @@
 /// <reference types="react" />
 import { palette } from "../tokens/tokens.json";
-import type { FontStyleType } from "../@types/types";
 export declare const styled: <Type extends import("@stitches/react/types/util").Function | keyof JSX.IntrinsicElements | import("react").ComponentType<any>, Composers extends (string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> | {
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{
     mobile: string;
-    tablet: string;
     desktop: string;
 }, {
     colors: {
-        galacticBlue: string;
-        summerYellow: string;
-        pink: string;
-        lightRed: string;
-        cyan: string;
-        darkPurple: string;
-        mediumBrown: string;
-        lightCream: string;
-        white: string;
+        cream: string;
+        aurometalSaurus: string;
+        deepAquamarine: string;
+        deepAquamarineHover: string;
+        gunmetal: string;
+        pureWhite: string;
         black: string;
     };
     fonts: {
-        jakarta: string;
+        fraunces: string;
+        montserrat: string;
     };
     fontSizes: {
-        default: any;
-        h1: any;
-        h2: any;
-        h3: any;
+        display: any;
+        body: any;
+        overline: any;
     };
     fontWeights: {
         medium: number;
         bold: number;
     };
     lineHeights: {
-        default: any;
-        h1: any;
-        h2: any;
-        h3: any;
+        display: any;
+        body: any;
+        overline: any;
     };
     zIndices: {
         header: number;
@@ -45,13 +39,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         dialog: number;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
-    textStyle: (type: FontStyleType) => {
-        color: string;
-        fontFamily: string;
-        fontSize: string;
-        fontWeight: string;
-        lineHeight: string;
-    };
     focusRing: (color: keyof typeof palette) => {
         outlineColor: string;
         outlineStyle: string;
@@ -78,43 +65,37 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     defaultVariants?: ("variants" extends keyof Composers[K] ? Composers[K][keyof Composers[K] & "variants"] extends infer T_1 ? { [Name_1 in keyof T_1]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : never : import("@stitches/react/types/util").WideObject) | undefined;
 } & CSS & (Composers[K] extends infer T_2 ? { [K2 in keyof T_2]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; } : never); }) => import("@stitches/react/types/styled-component").StyledComponent<Type, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
     mobile: string;
-    tablet: string;
     desktop: string;
 }, import("@stitches/react/types/css-util").CSS<{
     mobile: string;
-    tablet: string;
     desktop: string;
 }, {
     colors: {
-        galacticBlue: string;
-        summerYellow: string;
-        pink: string;
-        lightRed: string;
-        cyan: string;
-        darkPurple: string;
-        mediumBrown: string;
-        lightCream: string;
-        white: string;
+        cream: string;
+        aurometalSaurus: string;
+        deepAquamarine: string;
+        deepAquamarineHover: string;
+        gunmetal: string;
+        pureWhite: string;
         black: string;
     };
     fonts: {
-        jakarta: string;
+        fraunces: string;
+        montserrat: string;
     };
     fontSizes: {
-        default: any;
-        h1: any;
-        h2: any;
-        h3: any;
+        display: any;
+        body: any;
+        overline: any;
     };
     fontWeights: {
         medium: number;
         bold: number;
     };
     lineHeights: {
-        default: any;
-        h1: any;
-        h2: any;
-        h3: any;
+        display: any;
+        body: any;
+        overline: any;
     };
     zIndices: {
         header: number;
@@ -122,13 +103,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         dialog: number;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
-    textStyle: (type: FontStyleType) => {
-        color: string;
-        fontFamily: string;
-        fontSize: string;
-        fontWeight: string;
-        lineHeight: string;
-    };
     focusRing: (color: keyof typeof palette) => {
         outlineColor: string;
         outlineStyle: string;
@@ -146,39 +120,34 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{
     mobile: string;
-    tablet: string;
     desktop: string;
 }, {
     colors: {
-        galacticBlue: string;
-        summerYellow: string;
-        pink: string;
-        lightRed: string;
-        cyan: string;
-        darkPurple: string;
-        mediumBrown: string;
-        lightCream: string;
-        white: string;
+        cream: string;
+        aurometalSaurus: string;
+        deepAquamarine: string;
+        deepAquamarineHover: string;
+        gunmetal: string;
+        pureWhite: string;
         black: string;
     };
     fonts: {
-        jakarta: string;
+        fraunces: string;
+        montserrat: string;
     };
     fontSizes: {
-        default: any;
-        h1: any;
-        h2: any;
-        h3: any;
+        display: any;
+        body: any;
+        overline: any;
     };
     fontWeights: {
         medium: number;
         bold: number;
     };
     lineHeights: {
-        default: any;
-        h1: any;
-        h2: any;
-        h3: any;
+        display: any;
+        body: any;
+        overline: any;
     };
     zIndices: {
         header: number;
@@ -186,13 +155,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         dialog: number;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
-    textStyle: (type: FontStyleType) => {
-        color: string;
-        fontFamily: string;
-        fontSize: string;
-        fontWeight: string;
-        lineHeight: string;
-    };
     focusRing: (color: keyof typeof palette) => {
         outlineColor: string;
         outlineStyle: string;
@@ -219,7 +181,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     defaultVariants?: ("variants" extends keyof Composers[K] ? Composers[K][keyof Composers[K] & "variants"] extends infer T_1 ? { [Name_1 in keyof T_1]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : never : import("@stitches/react/types/util").WideObject) | undefined;
 } & CSS & (Composers[K] extends infer T_2 ? { [K2 in keyof T_2]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; } : never); }) => import("@stitches/react/types/styled-component").CssComponent<import("@stitches/react/types/styled-component").StyledComponentType<Composers>, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
     mobile: string;
-    tablet: string;
     desktop: string;
 }, CSS>, globalCss: <Styles extends {
     [K: string]: any;
@@ -229,39 +190,34 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
 } & { [K in keyof Styles]: K extends "@import" ? string | string[] : K extends "@font-face" ? import("@stitches/react/types/css").AtRule.FontFace | import("@stitches/react/types/css").AtRule.FontFace[] : K extends `@keyframes ${string}` ? {
     [x: string]: import("@stitches/react/types/css-util").CSS<{
         mobile: string;
-        tablet: string;
         desktop: string;
     }, {
         colors: {
-            galacticBlue: string;
-            summerYellow: string;
-            pink: string;
-            lightRed: string;
-            cyan: string;
-            darkPurple: string;
-            mediumBrown: string;
-            lightCream: string;
-            white: string;
+            cream: string;
+            aurometalSaurus: string;
+            deepAquamarine: string;
+            deepAquamarineHover: string;
+            gunmetal: string;
+            pureWhite: string;
             black: string;
         };
         fonts: {
-            jakarta: string;
+            fraunces: string;
+            montserrat: string;
         };
         fontSizes: {
-            default: any;
-            h1: any;
-            h2: any;
-            h3: any;
+            display: any;
+            body: any;
+            overline: any;
         };
         fontWeights: {
             medium: number;
             bold: number;
         };
         lineHeights: {
-            default: any;
-            h1: any;
-            h2: any;
-            h3: any;
+            display: any;
+            body: any;
+            overline: any;
         };
         zIndices: {
             header: number;
@@ -269,13 +225,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             dialog: number;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {
-        textStyle: (type: FontStyleType) => {
-            color: string;
-            fontFamily: string;
-            fontSize: string;
-            fontWeight: string;
-            lineHeight: string;
-        };
         focusRing: (color: keyof typeof palette) => {
             outlineColor: string;
             outlineStyle: string;
@@ -292,39 +241,34 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     }>;
 } : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{
     mobile: string;
-    tablet: string;
     desktop: string;
 }, {
     colors: {
-        galacticBlue: string;
-        summerYellow: string;
-        pink: string;
-        lightRed: string;
-        cyan: string;
-        darkPurple: string;
-        mediumBrown: string;
-        lightCream: string;
-        white: string;
+        cream: string;
+        aurometalSaurus: string;
+        deepAquamarine: string;
+        deepAquamarineHover: string;
+        gunmetal: string;
+        pureWhite: string;
         black: string;
     };
     fonts: {
-        jakarta: string;
+        fraunces: string;
+        montserrat: string;
     };
     fontSizes: {
-        default: any;
-        h1: any;
-        h2: any;
-        h3: any;
+        display: any;
+        body: any;
+        overline: any;
     };
     fontWeights: {
         medium: number;
         bold: number;
     };
     lineHeights: {
-        default: any;
-        h1: any;
-        h2: any;
-        h3: any;
+        display: any;
+        body: any;
+        overline: any;
     };
     zIndices: {
         header: number;
@@ -332,13 +276,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         dialog: number;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
-    textStyle: (type: FontStyleType) => {
-        color: string;
-        fontFamily: string;
-        fontSize: string;
-        fontWeight: string;
-        lineHeight: string;
-    };
     focusRing: (color: keyof typeof palette) => {
         outlineColor: string;
         outlineStyle: string;
@@ -355,39 +292,34 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
 }>; })[]) => () => string, keyframes: (style: {
     [offset: string]: import("@stitches/react/types/css-util").CSS<{
         mobile: string;
-        tablet: string;
         desktop: string;
     }, {
         colors: {
-            galacticBlue: string;
-            summerYellow: string;
-            pink: string;
-            lightRed: string;
-            cyan: string;
-            darkPurple: string;
-            mediumBrown: string;
-            lightCream: string;
-            white: string;
+            cream: string;
+            aurometalSaurus: string;
+            deepAquamarine: string;
+            deepAquamarineHover: string;
+            gunmetal: string;
+            pureWhite: string;
             black: string;
         };
         fonts: {
-            jakarta: string;
+            fraunces: string;
+            montserrat: string;
         };
         fontSizes: {
-            default: any;
-            h1: any;
-            h2: any;
-            h3: any;
+            display: any;
+            body: any;
+            overline: any;
         };
         fontWeights: {
             medium: number;
             bold: number;
         };
         lineHeights: {
-            default: any;
-            h1: any;
-            h2: any;
-            h3: any;
+            display: any;
+            body: any;
+            overline: any;
         };
         zIndices: {
             header: number;
@@ -395,13 +327,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             dialog: number;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {
-        textStyle: (type: FontStyleType) => {
-            color: string;
-            fontFamily: string;
-            fontSize: string;
-            fontWeight: string;
-            lineHeight: string;
-        };
         focusRing: (color: keyof typeof palette) => {
             outlineColor: string;
             outlineStyle: string;
@@ -424,35 +349,31 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     selector: string;
 } & {
     colors: {
-        galacticBlue: import("@stitches/react/types/theme").Token<"galacticBlue", string, "colors", "">;
-        summerYellow: import("@stitches/react/types/theme").Token<"summerYellow", string, "colors", "">;
-        pink: import("@stitches/react/types/theme").Token<"pink", string, "colors", "">;
-        lightRed: import("@stitches/react/types/theme").Token<"lightRed", string, "colors", "">;
-        cyan: import("@stitches/react/types/theme").Token<"cyan", string, "colors", "">;
-        darkPurple: import("@stitches/react/types/theme").Token<"darkPurple", string, "colors", "">;
-        mediumBrown: import("@stitches/react/types/theme").Token<"mediumBrown", string, "colors", "">;
-        lightCream: import("@stitches/react/types/theme").Token<"lightCream", string, "colors", "">;
-        white: import("@stitches/react/types/theme").Token<"white", string, "colors", "">;
+        cream: import("@stitches/react/types/theme").Token<"cream", string, "colors", "">;
+        aurometalSaurus: import("@stitches/react/types/theme").Token<"aurometalSaurus", string, "colors", "">;
+        deepAquamarine: import("@stitches/react/types/theme").Token<"deepAquamarine", string, "colors", "">;
+        deepAquamarineHover: import("@stitches/react/types/theme").Token<"deepAquamarineHover", string, "colors", "">;
+        gunmetal: import("@stitches/react/types/theme").Token<"gunmetal", string, "colors", "">;
+        pureWhite: import("@stitches/react/types/theme").Token<"pureWhite", string, "colors", "">;
         black: import("@stitches/react/types/theme").Token<"black", string, "colors", "">;
     };
     fonts: {
-        jakarta: import("@stitches/react/types/theme").Token<"jakarta", string, "fonts", "">;
+        fraunces: import("@stitches/react/types/theme").Token<"fraunces", string, "fonts", "">;
+        montserrat: import("@stitches/react/types/theme").Token<"montserrat", string, "fonts", "">;
     };
     fontSizes: {
-        default: import("@stitches/react/types/theme").Token<"default", string, "fontSizes", "">;
-        h1: import("@stitches/react/types/theme").Token<"h1", string, "fontSizes", "">;
-        h2: import("@stitches/react/types/theme").Token<"h2", string, "fontSizes", "">;
-        h3: import("@stitches/react/types/theme").Token<"h3", string, "fontSizes", "">;
+        display: import("@stitches/react/types/theme").Token<"display", string, "fontSizes", "">;
+        body: import("@stitches/react/types/theme").Token<"body", string, "fontSizes", "">;
+        overline: import("@stitches/react/types/theme").Token<"overline", string, "fontSizes", "">;
     };
     fontWeights: {
         medium: import("@stitches/react/types/theme").Token<"medium", string, "fontWeights", "">;
         bold: import("@stitches/react/types/theme").Token<"bold", string, "fontWeights", "">;
     };
     lineHeights: {
-        default: import("@stitches/react/types/theme").Token<"default", string, "lineHeights", "">;
-        h1: import("@stitches/react/types/theme").Token<"h1", string, "lineHeights", "">;
-        h2: import("@stitches/react/types/theme").Token<"h2", string, "lineHeights", "">;
-        h3: import("@stitches/react/types/theme").Token<"h3", string, "lineHeights", "">;
+        display: import("@stitches/react/types/theme").Token<"display", string, "lineHeights", "">;
+        body: import("@stitches/react/types/theme").Token<"body", string, "lineHeights", "">;
+        overline: import("@stitches/react/types/theme").Token<"overline", string, "lineHeights", "">;
     };
     zIndices: {
         header: import("@stitches/react/types/theme").Token<"header", string, "zIndices", "">;
@@ -461,35 +382,31 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
 }, createTheme: <Argument0 extends string | ({
     colors?: {
-        galacticBlue?: string | number | boolean | undefined;
-        summerYellow?: string | number | boolean | undefined;
-        pink?: string | number | boolean | undefined;
-        lightRed?: string | number | boolean | undefined;
-        cyan?: string | number | boolean | undefined;
-        darkPurple?: string | number | boolean | undefined;
-        mediumBrown?: string | number | boolean | undefined;
-        lightCream?: string | number | boolean | undefined;
-        white?: string | number | boolean | undefined;
+        cream?: string | number | boolean | undefined;
+        aurometalSaurus?: string | number | boolean | undefined;
+        deepAquamarine?: string | number | boolean | undefined;
+        deepAquamarineHover?: string | number | boolean | undefined;
+        gunmetal?: string | number | boolean | undefined;
+        pureWhite?: string | number | boolean | undefined;
         black?: string | number | boolean | undefined;
     } | undefined;
     fonts?: {
-        jakarta?: string | number | boolean | undefined;
+        fraunces?: string | number | boolean | undefined;
+        montserrat?: string | number | boolean | undefined;
     } | undefined;
     fontSizes?: {
-        default?: string | number | boolean | undefined;
-        h1?: string | number | boolean | undefined;
-        h2?: string | number | boolean | undefined;
-        h3?: string | number | boolean | undefined;
+        display?: string | number | boolean | undefined;
+        body?: string | number | boolean | undefined;
+        overline?: string | number | boolean | undefined;
     } | undefined;
     fontWeights?: {
         medium?: string | number | boolean | undefined;
         bold?: string | number | boolean | undefined;
     } | undefined;
     lineHeights?: {
-        default?: string | number | boolean | undefined;
-        h1?: string | number | boolean | undefined;
-        h2?: string | number | boolean | undefined;
-        h3?: string | number | boolean | undefined;
+        display?: string | number | boolean | undefined;
+        body?: string | number | boolean | undefined;
+        overline?: string | number | boolean | undefined;
     } | undefined;
     zIndices?: {
         header?: string | number | boolean | undefined;
@@ -503,35 +420,31 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
 }), Argument1 extends string | ({
     colors?: {
-        galacticBlue?: string | number | boolean | undefined;
-        summerYellow?: string | number | boolean | undefined;
-        pink?: string | number | boolean | undefined;
-        lightRed?: string | number | boolean | undefined;
-        cyan?: string | number | boolean | undefined;
-        darkPurple?: string | number | boolean | undefined;
-        mediumBrown?: string | number | boolean | undefined;
-        lightCream?: string | number | boolean | undefined;
-        white?: string | number | boolean | undefined;
+        cream?: string | number | boolean | undefined;
+        aurometalSaurus?: string | number | boolean | undefined;
+        deepAquamarine?: string | number | boolean | undefined;
+        deepAquamarineHover?: string | number | boolean | undefined;
+        gunmetal?: string | number | boolean | undefined;
+        pureWhite?: string | number | boolean | undefined;
         black?: string | number | boolean | undefined;
     } | undefined;
     fonts?: {
-        jakarta?: string | number | boolean | undefined;
+        fraunces?: string | number | boolean | undefined;
+        montserrat?: string | number | boolean | undefined;
     } | undefined;
     fontSizes?: {
-        default?: string | number | boolean | undefined;
-        h1?: string | number | boolean | undefined;
-        h2?: string | number | boolean | undefined;
-        h3?: string | number | boolean | undefined;
+        display?: string | number | boolean | undefined;
+        body?: string | number | boolean | undefined;
+        overline?: string | number | boolean | undefined;
     } | undefined;
     fontWeights?: {
         medium?: string | number | boolean | undefined;
         bold?: string | number | boolean | undefined;
     } | undefined;
     lineHeights?: {
-        default?: string | number | boolean | undefined;
-        h1?: string | number | boolean | undefined;
-        h2?: string | number | boolean | undefined;
-        h3?: string | number | boolean | undefined;
+        display?: string | number | boolean | undefined;
+        body?: string | number | boolean | undefined;
+        overline?: string | number | boolean | undefined;
     } | undefined;
     zIndices?: {
         header?: string | number | boolean | undefined;
@@ -550,40 +463,35 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     prefix: "";
     media: {
         mobile: string;
-        tablet: string;
         desktop: string;
     };
     theme: {
         colors: {
-            galacticBlue: string;
-            summerYellow: string;
-            pink: string;
-            lightRed: string;
-            cyan: string;
-            darkPurple: string;
-            mediumBrown: string;
-            lightCream: string;
-            white: string;
+            cream: string;
+            aurometalSaurus: string;
+            deepAquamarine: string;
+            deepAquamarineHover: string;
+            gunmetal: string;
+            pureWhite: string;
             black: string;
         };
         fonts: {
-            jakarta: string;
+            fraunces: string;
+            montserrat: string;
         };
         fontSizes: {
-            default: any;
-            h1: any;
-            h2: any;
-            h3: any;
+            display: any;
+            body: any;
+            overline: any;
         };
         fontWeights: {
             medium: number;
             bold: number;
         };
         lineHeights: {
-            default: any;
-            h1: any;
-            h2: any;
-            h3: any;
+            display: any;
+            body: any;
+            overline: any;
         };
         zIndices: {
             header: number;
@@ -593,13 +501,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
     themeMap: import("@stitches/react/types/config").DefaultThemeMap;
     utils: {
-        textStyle: (type: FontStyleType) => {
-            color: string;
-            fontFamily: string;
-            fontSize: string;
-            fontWeight: string;
-            lineHeight: string;
-        };
         focusRing: (color: keyof typeof palette) => {
             outlineColor: string;
             outlineStyle: string;
